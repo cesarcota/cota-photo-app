@@ -10,7 +10,9 @@
     "react-dom": "^16.13.0",
     "react-photo-gallery": "^8.0.0",
     "react-scripts": "3.4.0",
-    "react-scrolling-nav": "^1.1.5"
+    "react-scrolling-nav": "^1.1.5",
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
