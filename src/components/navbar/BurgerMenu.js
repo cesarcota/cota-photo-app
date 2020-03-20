@@ -1,20 +1,19 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from "styled-components";
 
-const BurgerMenu = (props) => {
-    return (
-        <Wrapper onclick={props.handleNavBar} >
-            <div className={props.navBarState ? 'open' : ''} >
-                <span>&nbsp;</span>
-                <span>&nbsp;</span>
-                <span>&nbsp;</span>
-                <span>&nbsp;</span>
-            </div>
-        </Wrapper>
-    )
+const Burgermenu = (props) => {
+  return (
+    <Wrapper onClick={props.handleNavbar}>
+      <div className={ props.navbarState ? "open" : "" }>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </div>
+    </Wrapper>
+  );
 }
 
-export default BurgerMenu
+export default Burgermenu;
 
 const Wrapper = styled.div`
   position: relative;
@@ -46,4 +45,4 @@ const Wrapper = styled.div`
     top: 11px;
   }
 
-`
+`;

@@ -10,26 +10,24 @@ const style = {
 
 class App extends Component {
     state = {
-        navBarOpen: false
-    }
-
-    handleNavBar = () => {
-        this.setState({ navBarOpen: !this.state.navBarOpen })
-    }
+        navbarOpen: false
+      }
+    
+      handleNavbar = () => {
+        this.setState({ navbarOpen: !this.state.navbarOpen });
+      }
 
 
     render() {
         return (
             <>
-                <NavBar
-                    navbarState={this.state.navBarOpen}
-                    handleNavBar={this.handleNavBar}
-                />
                 <GlobalStyle />
+                <NavBar
+                    navbarState={this.state.navbarOpen}
+                    handleNavbar={this.handleNavbar}
+                />
                 <div style={style}>
-
                     <Gallery photos={photos} direction={"column"} />
-
                 </div>
             </>
         );
