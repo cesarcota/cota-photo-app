@@ -1,47 +1,22 @@
-import React from 'react'
-import styled from "styled-components";
-import { useSpring, animated, config } from "react-spring";
+import React from "react"
+import styled from "styled-components"
+import { animated } from "react-spring"
 
-import BurgerMenu from "./BurgerMenu";
-import CollapseMenu from "./CollapseMenu";
+import Links from "./Links"
 
-const Navbar = (props) => {
-  const barAnimation = useSpring({
-    from: { transform: 'translate3d(0, -10rem, 0)' },
-    transform: 'translate3d(0, 0, 0)',
-  });
-
-  const linkAnimation = useSpring({
-    from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
-    to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
-    delay: 800,
-    config: config.wobbly,
-  });
+const Navbar = () => {
 
   return (
     <>
-      <NavBar style={barAnimation}>
+      <NavBar >
         <FlexContainer>
           <div/>
-          <NavLinks style={linkAnimation}>
-            <a href="/">inicio</a>
-            <a href="/">portfolio</a>
-            <a href="/">sobre mim</a>
-            <a href="/">contactos</a>
-          </NavLinks>
-          <BurgerWrapper>
-            <BurgerMenu
-              navbarState={props.navbarState} 
-              handleNavbar={props.handleNavbar}
-            />
-          </BurgerWrapper>
+          <NavLinks>
+            <Links  />
+          </NavLinks> 
         </FlexContainer>
       </NavBar>
-      <CollapseMenu 
-        navbarState={props.navbarState} 
-        handleNavbar={props.handleNavbar}
-      />
-   </>
+    </>
   )
 }
 
@@ -55,7 +30,7 @@ const NavBar = styled(animated.nav)`
   background: #2d3436;
   z-index: 1;
   font-size: 1.4rem;
-`;
+`
 
 const FlexContainer = styled.div`
   max-width: 120rem;
@@ -64,7 +39,7 @@ const FlexContainer = styled.div`
   padding: 0 2rem;;
   justify-content: space-between;
   height: 5rem;
-`;
+`
 
 const NavLinks = styled(animated.ul)`
   justify-self: end;
@@ -85,17 +60,5 @@ const NavLinks = styled(animated.ul)`
       color: #fdcb6e;
       border-bottom: 1px solid #fdcb6e;
     }
-
-    @media (max-width: 768px) {
-      display: none;
-    }
   }
-`;
-
-const BurgerWrapper = styled.div`
-  margin: auto 0;
-
-  @media (min-width: 769px) {
-    display: none;
-  }
-`;
+`

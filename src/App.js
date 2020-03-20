@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import Gallery from 'react-photo-gallery'
-import { photos } from './photos'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import NavBar from './components/navbar/Navbar'
 import GlobalStyle from './styles/Global'
-
-const style = {
-    marginTop: "50px"
-}
+import CustomRoute from "./route/CustomRoute"
 
 class App extends Component {
     state = {
@@ -20,16 +16,16 @@ class App extends Component {
 
     render() {
         return (
-            <>
+            <Router>
+                <>
                 <GlobalStyle />
                 <NavBar
                     navbarState={this.state.navbarOpen}
                     handleNavbar={this.handleNavbar}
-                />
-                <div style={style}>
-                    <Gallery photos={photos} direction={"column"} />
-                </div>
-            </>
+                    />
+                </>
+                <CustomRoute/>
+           </Router>
         );
     }
 }
