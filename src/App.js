@@ -4,6 +4,11 @@ import NavBar from './components/navbar/Navbar'
 import GlobalStyle from './styles/Global'
 import CustomRoute from "./route/CustomRoute"
 
+document.oncontextmenu = function() {
+    alert("estas imagens estão protegidas por direitos de autor")
+  return false;
+}
+
 class App extends Component {
     state = {
         navbarOpen: false
