@@ -1,6 +1,5 @@
 import React from "react"
-import { photos } from "../../assets/photos"
-import Gallery from "react-photo-gallery"
+import PhotoGallery, {settings} from "../Gallery"
 
 const style = {
   marginTop: "50px"
@@ -9,7 +8,7 @@ const style = {
 const Home = () => {
   return (
     <div style={style}>
-      <Gallery photos={photos} direction={"column"} />
+      <PhotoGallery albumId={settings.albuns.landscape} />
     </div>
   )
 }

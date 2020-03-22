@@ -4,10 +4,9 @@ export const paths =
    contact: "/contact",
    portfolio: {
      root: "/portfolio",
-     weddings: "/portfolio/weddings",
+     reports: "/portfolio/reports",
      landscape: "/portfolio/landscape",
-     baptism: "/portfolio/baptism",
-     photoshoot: "/portfolio/photoshoot"
+     portraits: "/portfolio/portraits"
    }
    
  }

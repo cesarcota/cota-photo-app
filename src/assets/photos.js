@@ -1,4 +1,5 @@
 export const photos = [
+//http://farm{farm-id}.static.flickr.com/{server-id}/{id}_{secret}.jpg
   {
     src: "https://live.staticflickr.com/65535/49674360931_84d893570b_k.jpg",
     width: 3,
@@ -80,4 +81,4 @@ export const photos = [
     width: 4,
     height: 3
   }
-];
+]

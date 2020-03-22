@@ -18,10 +18,9 @@ const Portfolio = () => {
     <div style={styles.div}>
       <h2>this will be portfolio page</h2>
 
-      <a style={styles.a} href={paths.portfolio.weddings}>Casamentos</a>
+      <a style={styles.a} href={paths.portfolio.portraits}>Retratos</a>
       <a style={styles.a} href={paths.portfolio.landscape}>Paisagem</a>
-      <a style={styles.a} href={paths.portfolio.baptism}>Baptizdos</a>
-      <a style={styles.a} href={paths.portfolio.photoshoot}>Sessões Fotográficas</a>
+      <a style={styles.a} href={paths.portfolio.reports}>Reportagens</a>
     </div>
   )
 }

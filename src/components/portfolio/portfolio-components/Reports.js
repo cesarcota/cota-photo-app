@@ -6,12 +6,12 @@ const style = {
 }
 
 
-const Landscape = () => {
+const Reports = () => {
   return (
     <div style={style}>
-      <PhotoGallery albumId={settings.albuns.landscape} />
+      <PhotoGallery albumId={settings.albuns.reports} />
     </div>
   )
 }
 
-export default Landscape
+export default Reports
