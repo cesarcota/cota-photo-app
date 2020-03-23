@@ -14,12 +14,7 @@ import {
 
 export const settings = {
   apiKey: "a562199b25b405de930467dda1be29a0",
-  userId: "127203421%40N05",
-  albuns: {
-    reports: "72157713565681836",
-    portraits: "72157713571173278",
-    landscape:"72157713571181303"
-  }
+  userId: "127203421%40N05"
 }
 
 export const albuns = {

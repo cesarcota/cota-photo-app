@@ -10,8 +10,6 @@ export const fetchPhotosUrlPending = () => {
   }
 }
 
-
-
 export const fetchPhotosUrlError = (error) => {
   return {
     type: FETCTH_PHOTOS_URL_ERROR,
