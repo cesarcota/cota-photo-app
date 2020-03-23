@@ -1,17 +1,34 @@
 import React from "react"
-import PhotoGallery, {settings} from "../../Gallery"
+import PhotoGallery from "../../Gallery"
+import {connect} from "react-redux"
+import PropTypes from "prop-types"
 
 const style = {
   marginTop: "50px"
 }
 
+const Portraits = (props) => {
+  if (props.photos.length> 0) {
+    return (
+      <div style={style}>
+        <PhotoGallery photos={props.photos} />
+      </div>
+    )
+  } 
 
-const Portraits = () => {
   return (
-    <div style={style}>
-      <PhotoGallery albumId={settings.albuns.portraits} />
-    </div>
+    <div style={style} >  no data</div>
   )
 }
 
-export default Portraits
+const mapStateToProps = (state) => {
+  return {
+    photos: state.data.portrait
+  }
+}
+
+Portraits.propTypes = {
+  photos: PropTypes.array
+}
+
+export default connect(mapStateToProps, null)(Portraits)

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router} from 'react-router-dom'
 import NavBar from './components/navbar/Navbar'
 import GlobalStyle from './styles/Global'
 import CustomRoute from "./route/CustomRoute"
@@ -8,6 +8,7 @@ document.oncontextmenu = function() {
     alert("estas imagens estão protegidas por direitos de autor")
   return false;
 }
+
 
 class App extends Component {
     state = {
@@ -21,6 +22,7 @@ class App extends Component {
 
     render() {
         return (
+
             <Router>
                 <>
                 <GlobalStyle />
