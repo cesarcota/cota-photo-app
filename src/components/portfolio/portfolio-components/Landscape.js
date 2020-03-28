@@ -3,23 +3,34 @@ import PhotoGallery from "../../Gallery"
 
 import {connect} from "react-redux"
 import PropTypes from "prop-types"
+import { Spinner } from "react-bootstrap"
 
 const style = {
-  marginTop: "50px"
+  container: {
+    marginTop: "55px"
+  },
+  spinner: {
+    marginTop: "25%",
+    marginLeft: "50%",
+    alignContent: "center"  ,
+  }
 }
 
 const Landscape = (props) => {
+
   if (props.photos.length> 0) {
     return (
-      <div style={style}>
+      <div style={style.container}>
         <PhotoGallery photos={props.photos} />
       </div>
     )
   } 
 
   return (
-    <div style={style} >  no data</div>
-  )
+    <div style={style.spinner} >
+      <Spinner size="lg" animation="border" />
+    </div>
+  ) 
 }
 
 const mapStateToProps = (state) => {

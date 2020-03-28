@@ -1,41 +1,31 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router} from 'react-router-dom'
-import NavBar from './components/navbar/Navbar'
-import GlobalStyle from './styles/Global'
+import React, { Component } from "react"
+import { BrowserRouter as Router} from "react-router-dom"
 import CustomRoute from "./route/CustomRoute"
+import CoustomNavBar from "./components/navbar/CoustomNavBar"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 document.oncontextmenu = function() {
-    alert("estas imagens estão protegidas por direitos de autor")
-  return false;
+  alert("estas imagens estão protegidas por direitos de autor")
+  return false
 }
 
 
 class App extends Component {
-    state = {
-        navbarOpen: false
-      }
-    
-      handleNavbar = () => {
-        this.setState({ navbarOpen: !this.state.navbarOpen });
-      }
 
 
-    render() {
-        return (
 
-            <Router>
-                <>
-                <GlobalStyle />
-                <NavBar
-                    navbarState={this.state.navbarOpen}
-                    handleNavbar={this.handleNavbar}
-                    />
-                </>
-                <CustomRoute/>
-           </Router>
-        );
-    }
+  render() {
+    return (
+
+      <Router>
+        <>
+          <CoustomNavBar />
+        </>
+        <CustomRoute/>
+      </Router>
+    )
+  }
 }
 
-export default App;
+export default App
 
