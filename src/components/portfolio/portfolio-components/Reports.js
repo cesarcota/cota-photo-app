@@ -18,7 +18,7 @@ const style = {
 const Reports = (props) => {
   if (props.photos.length> 0) {
     return (
-      <div style={style}>
+      <div style={style.container}>
         <PhotoGallery photos={props.photos} />
       </div>
     )

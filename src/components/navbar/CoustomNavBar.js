@@ -22,7 +22,7 @@ constructor(props) {
     return(
       
       <Navbar bg="dark" variant="dark" fixed="top" expand="lg">
-      <Navbar.Brand href="#home">César Miguel Cota</Navbar.Brand>
+      <Navbar.Brand style={{marginLeft: "100"}} href={paths.home}>César Miguel Cota</Navbar.Brand>
       <Navbar.Toggle  aria-controls="basic-navbar-nav" />
       <Navbar.Collapse  id="basic-navbar-nav">
         <Nav   className="ml-auto">
