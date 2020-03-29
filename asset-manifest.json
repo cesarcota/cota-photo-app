@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/cesarmiguelcota/static/js/main.e94c935b.chunk.js",
-    "main.js.map": "/cesarmiguelcota/static/js/main.e94c935b.chunk.js.map",
-    "runtime-main.js": "/cesarmiguelcota/static/js/runtime-main.19dcde33.js",
-    "runtime-main.js.map": "/cesarmiguelcota/static/js/runtime-main.19dcde33.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/cesarmiguelcota/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.645a66ec.chunk.js": "/cesarmiguelcota/static/js/2.645a66ec.chunk.js",
-    "static/js/2.645a66ec.chunk.js.map": "/cesarmiguelcota/static/js/2.645a66ec.chunk.js.map",
-    "index.html": "/cesarmiguelcota/index.html",
-    "precache-manifest.8cf9664a2813487c5380a6f2b0ec7eb1.js": "/cesarmiguelcota/precache-manifest.8cf9664a2813487c5380a6f2b0ec7eb1.js",
-    "service-worker.js": "/cesarmiguelcota/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/cesarmiguelcota/static/css/2.47e06e2e.chunk.css.map",
-    "static/js/2.645a66ec.chunk.js.LICENSE.txt": "/cesarmiguelcota/static/js/2.645a66ec.chunk.js.LICENSE.txt"
+    "main.js": "/cota-photo-app/static/js/main.e94c935b.chunk.js",
+    "main.js.map": "/cota-photo-app/static/js/main.e94c935b.chunk.js.map",
+    "runtime-main.js": "/cota-photo-app/static/js/runtime-main.1b25b648.js",
+    "runtime-main.js.map": "/cota-photo-app/static/js/runtime-main.1b25b648.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/cota-photo-app/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.645a66ec.chunk.js": "/cota-photo-app/static/js/2.645a66ec.chunk.js",
+    "static/js/2.645a66ec.chunk.js.map": "/cota-photo-app/static/js/2.645a66ec.chunk.js.map",
+    "index.html": "/cota-photo-app/index.html",
+    "precache-manifest.731b47e1d6938ff738ca31053a712242.js": "/cota-photo-app/precache-manifest.731b47e1d6938ff738ca31053a712242.js",
+    "service-worker.js": "/cota-photo-app/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/cota-photo-app/static/css/2.47e06e2e.chunk.css.map",
+    "static/js/2.645a66ec.chunk.js.LICENSE.txt": "/cota-photo-app/static/js/2.645a66ec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.19dcde33.js",
+    "static/js/runtime-main.1b25b648.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.645a66ec.chunk.js",
     "static/js/main.e94c935b.chunk.js"
